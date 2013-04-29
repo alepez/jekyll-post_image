@@ -70,7 +70,6 @@ module Jekyll
         original_url = "/assets/#{post_name}/#{original}"
         resized_path = "#{site_src}#{resized_url}"
         original_path = "#{site_src}#{original_url}"
-        dimensions = '870x'
         dst_dir = File.dirname("#{site_src}#{resized_url}")
         FileUtils.mkdir_p(dst_dir) unless File.exists?(dst_dir)
         # only thumbnail the image if it doesn't exist tor is less recent than the source file
